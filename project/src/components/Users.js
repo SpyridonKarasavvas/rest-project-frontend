@@ -28,16 +28,19 @@ class EmployeeList extends React.Component{
 			<Employee key={user._links.self.href} user={user}/>
 		);
 		return (
-			<table>
-				<tbody>
-					<tr>
-						<th>Username</th>
-						<th>Password</th>
-						<th>Enabled</th>
-					</tr>
-					{users}
-				</tbody>
-			</table>
+			<div>
+				<h2>User List</h2>
+				<table>
+					<tbody>
+						<tr>
+							<th>Username</th>
+							<th>Password</th>
+							<th>Enabled</th>
+						</tr>
+						{users}
+					</tbody>
+				</table>
+			</div>
 		)
 	}
 }

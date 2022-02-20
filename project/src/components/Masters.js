@@ -28,18 +28,21 @@ class EmployeeList extends React.Component{
 			<Employee key={master._links.self.href} master={master}/>
 		);
 		return (
-			<table>
-				<tbody>
-					<tr>
-						<th>Master's ID</th>
-						<th>Title</th>
-						<th>Context</th>
-						<th>Criteria</th>
-						<th>Field</th>
-					</tr>
-					{masters}
-				</tbody>
-			</table>
+			<div>
+				<h2>Masters List</h2>
+				<table>
+					<tbody>
+						<tr>
+							<th>Master's ID</th>
+							<th>Title</th>
+							<th>Context</th>
+							<th>Criteria</th>
+							<th>Field</th>
+						</tr>
+						{masters}
+					</tbody>
+				</table>
+			</div>
 		)
 	}
 }
