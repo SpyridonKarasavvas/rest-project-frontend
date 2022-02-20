@@ -16,7 +16,7 @@ on the terminal and wait until the installation of the node modules is complete
 ```
 npm start
 ```
--After you run the app, it will redirect your browser to http://localhost:3000/, if not, follow this link
+-After you run the app, it will redirect your browser to http://localhost:3000/, if not, follow the link
 
 *IMPORTANT*
 
