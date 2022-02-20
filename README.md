@@ -19,4 +19,6 @@ npm start
 -After you run the app, it will redirect your browser to http://localhost:3000/, if not, follow this link
 
 *IMPORTANT*
-You need to be connected to the database and and run the backend application in the background in order for the frontend application to work. See https://github.com/ChrisPdgn/rest-project/edit/main/README.md for more information on that.
+
+You need to be connected to the database and and run the backend application in the background in order for the frontend application to work. 
+See https://github.com/ChrisPdgn/rest-project/edit/main/README.md for more information on that.
