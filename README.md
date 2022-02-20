@@ -8,11 +8,11 @@
 - Extract the contents of .zip in a folder  
 - Open Terminal and redirect to the folder of the project
 - Type
-...
+```
 npm install
-...
+```
 on the terminal and wait until the installation of the node modules is complete
 - After the installation is complete, type 
-...
+```
 npm start
-...
+```
