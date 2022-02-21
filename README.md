@@ -24,3 +24,6 @@ npm start
 
 You need to be connected to the database and and run the backend application in the background in order for the frontend application to work. 
 See https://github.com/ChrisPdgn/rest-project/edit/main/README.md for more information on that.
+
+
+You need to have node.js (v 16.13.2) installed 
