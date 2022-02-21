@@ -26,4 +26,4 @@ You need to be connected to the database and and run the backend application in 
 See https://github.com/ChrisPdgn/rest-project/edit/main/README.md for more information on that.
 
 
-You need to have node.js(v. 16.13.2) and npm (v 8.1.2) installed 
+You need to have node.js(v. 16.13.2) and npm (v. 8.1.2) installed 
