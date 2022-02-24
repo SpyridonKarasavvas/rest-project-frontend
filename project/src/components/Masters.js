@@ -17,15 +17,15 @@ class Masters extends React.Component {
 
 	render() {
 		return (
-			<EmployeeList masters={this.state.masters}/>
+			<MasterList masters={this.state.masters}/>
 		)
 	}
 }
 
-class EmployeeList extends React.Component{
+class MasterList extends React.Component{
 	render() {
 		const masters = this.props.masters.map(master =>
-			<Employee key={master._links.self.href} master={master}/>
+			<Master key={master._links.self.href} master={master}/>
 		);
 		return (
 			<div>
@@ -47,7 +47,7 @@ class EmployeeList extends React.Component{
 	}
 }
 
-class Employee extends React.Component{
+class Master extends React.Component{
 	render() {
 		return (
 			<tr>

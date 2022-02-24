@@ -17,15 +17,15 @@ class Secretaries extends React.Component {
 
 	render() {
 		return (
-			<EmployeeList secretaries={this.state.secretaries}/>
+			<SecretaryList secretaries={this.state.secretaries}/>
 		)
 	}
 }
 
-class EmployeeList extends React.Component{
+class SecretaryList extends React.Component{
 	render() {
 		const secretaries = this.props.secretaries.map(secretary =>
-			<Employee key={secretary._links.self.href} secretary={secretary}/>
+			<Secretary key={secretary._links.self.href} secretary={secretary}/>
 		);
 		return (
 			<div>
@@ -45,7 +45,7 @@ class EmployeeList extends React.Component{
 	}
 }
 
-class Employee extends React.Component{
+class Secretary extends React.Component{
 	render() {
 		return (
 			<tr>

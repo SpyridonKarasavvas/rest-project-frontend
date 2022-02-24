@@ -17,15 +17,15 @@ class Students extends React.Component {
 
 	render() {
 		return (
-			<EmployeeList students={this.state.students}/>
+			<StudentList students={this.state.students}/>
 		)
 	}
 }
 
-class EmployeeList extends React.Component{
+class StudentList extends React.Component{
 	render() {
 		const students = this.props.students.map(student =>
-			<Employee key={student._links.self.href} student={student}/>
+			<Student key={student._links.self.href} student={student}/>
 		);
 		return (
 			<div>
@@ -52,7 +52,7 @@ class EmployeeList extends React.Component{
 	}
 }
 
-class Employee extends React.Component{
+class Student extends React.Component{
 	render() {
 		return (
 			<tr>

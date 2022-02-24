@@ -17,15 +17,15 @@ class Applications extends React.Component {
 
 	render() {
 		return (
-			<EmployeeList applications={this.state.applications}/>
+			<ApplicationList applications={this.state.applications}/>
 		)
 	}
 }
 
-class EmployeeList extends React.Component{
+class ApplicationList extends React.Component{
 	render() {
 		const applications = this.props.applications.map(application =>
-			<Employee key={application._links.self.href} application={application}/>
+			<Application key={application._links.self.href} application={application}/>
 		);
 		return (
 			<div>
@@ -46,7 +46,7 @@ class EmployeeList extends React.Component{
 	}
 }
 
-class Employee extends React.Component{
+class Application extends React.Component{
 	render() {
 		return (
 			<tr>
