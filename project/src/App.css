@@ -83,7 +83,8 @@ a:hover, a:active {
 }
 button {
   font-family: Arial;
-  background-color: #eee;
+  color: #deeaee;
+  background-color: #4d8ba8;
   border: none;
   padding: 5px 10px;
   border-radius: 4px;
@@ -91,11 +92,11 @@ button {
   cursor: hand;
 }
 button:hover {
-  background-color: #cfd8dc;
+  background-color: teal;
 }
 button:disabled {
   background-color: #eee;
-  color: #aaa; 
+  color: #deeaee; 
   cursor: auto;
 }
 
@@ -191,7 +192,7 @@ li {
   margin-right: 25px;
 }
 table, th, td, tr {
-  border: 1px solid #deeaee;
+  border: 2px solid #deeaee;
   border-collapse: collapse;
   margin: auto;
   border-collapse: collapse;
@@ -203,4 +204,10 @@ th, td {
 }
 menu {
   text-align: center;
+}
+br {
+  display: block;
+  margin-bottom: 10px;
+  font-size:10px;
+  line-height: 10px;
 }

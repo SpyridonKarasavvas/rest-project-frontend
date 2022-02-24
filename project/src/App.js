@@ -2,8 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Home from './components/Home.js';
-import Users from './components/Users.js';
+import Protected from './components/Protected';
+import Login from './Login';
+import Home from './components/Home';
+import Users from './components/Users';
 import Masters from './components/Masters';
 import Applications from './components/Applications';
 import Students from './components/Students';
@@ -19,13 +21,17 @@ function App(){
 		<div className="App">
 			<h1>Rest Project</h1>
 			<Routes>
-				<Route exact path="/" element={<Home />} />
-				<Route exact path="/users" element={<Users />} />
-				<Route exact path="/masters" element={<Masters />} />
-				<Route exact path="/applications" element={<Applications />} />
-				<Route exact path="/students" element={<Students />} />
-				<Route exact path="/instructors" element={<Instructors />} />
-				<Route exact path="/secretary" element={<Secretaries />} />
+				<Route path="/" exact element={<Login />} />
+				<Route path="/login" exact element={<Login />} />
+				<Route element={<Protected />}>
+					<Route path="/home" exact element={<Home />} />
+					<Route path="/users" exact element={<Users />} />
+					<Route path="/masters" exact element={<Masters />} />
+					<Route path="/applications" exact element={<Applications />} />
+					<Route path="/students" exact element={<Students />} />
+					<Route path="/instructors" exact element={<Instructors />} />
+					<Route path="/secretary" exact element={<Secretaries />} />
+				</Route>
 			</Routes>
 		</div>
 	);
