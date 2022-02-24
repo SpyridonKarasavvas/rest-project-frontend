@@ -113,6 +113,9 @@ const Login = () => {
                 console.log(obj.password)
                 break;
               } else {
+                setErrorMessage((prevState) => ({
+                  value: "Incorrect Credentials!",
+                }));
                 localStorage.setItem("isAuthenticated", "false");
               }
             }
